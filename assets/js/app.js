@@ -76,7 +76,7 @@ app.controller('MainController', ['$scope', function($scope) {
             name: 'Certificate',
             text: 'Cyber Threats and Attack Vectors Course, University of Colorado System, Greg Williams',
             link: '',
-            image: 'assets/img/presentations/Certificate.png'
+            image: 'assets/img/presentations/Certificate.PNG'
         }
     ];
 }]);
