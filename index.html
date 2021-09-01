@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/social-likes_flat.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="The page of a hacker and technology enthusiasist. Featuring a portfolio of projects.">
+    <meta name="keywords" content="shafqat, dulal, personal, portfolio, website, projects,
+	web developer, server side programmer, algorithms, ruby on rails, python, java, oop, skills, computer science">
+    <meta name="author" content="Ghazale Bakhtiari Azad">
+    <script src="assets/js/vendor/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+    <script src="assets/js/vendor/jquery.visible.min.js"></script>
+    <script src="assets/js/vendor/social-likes.min.js"></script>
+    <script src="assets/js/vendor/angular.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Ghazale Bakhtiari Azad</title>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-64615515-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<body ng-app="app">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"></button>
+    <!-- <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a> -->
+    
+    <div id="container">
+        <div id="Home" class="parallax background">
+            <div id="main-title">
+                <div id="big">
+                    Ghazale Bakhtiari Azad
+                </div>
+                <p hidden></p>
+                <h1 id="medium">
+                    Computer Engineer | Research Scientist
+                  </h1>
+                
+                <h1 class="ml4">
+                    <span class="letters letters-1">Software Engineering</span>
+                    <span class="letters letters-2">Distributed Systems</span>
+                    <span class="letters letters-3">Data Mining</span>
+                    <span class="letters letters-4">Cloud Computing</span>
+                  </h1>
+                  <div style="margin: 10% 37.5%; width: 26%;">
+                    <!-- <a href="cv.pdf" download="CV">
+                        Download My CV
+                      </a> -->
+
+                    <a class="button-cv nav-link inline"  style="width: 50%; margin: 8% 0%" href="cv.pdf" title="" download >
+                        <button style="background-color: #ccc;" type="button" class="btn btn-default">Download My CV</button>
+
+                    </a>
+                </div>
+            </div>
+
+            <div id="overlay"></div>
+            <a href="#about" id="bouncing-arrow">
+                <!-- <div>Click here ...</div> -->
+                <span class="fa fa-chevron-down"></span>
+            </a>
+        </div>
+        <div id="content" ng-controller="MainController">
+            <nav>
+                <li id="item0"><a href="#Home">Home</a></li>
+                <li id="item1"><a href="#about">About</a></li>
+                <li id="item2"><a href="#experiences">Experiences</a></li>
+                <li id="item3"><a href="#skills">Skills</a></li>
+                <li id="item4"><a href="#Projects">Projects</a></li>
+                <li id="item5"><a href="#interests">Presentations</a></li>
+                <li id="item6"><a href="#contact">Contact</a></li>
+            </nav>
+            <section id="about">
+                <header>
+                    <h1>About Me</h1>
+                    <h2>A little about who Ghazale Bakhtiari is</h2>
+                </header>
+                <div id="profile-pic">
+                    <div></div>
+                </div>
+                <div id="about-me">
+                    <p style="text-align: justify;">
+                    Hi, I'm Ghazale, and I’ve recently graduated with a Bachelor of Science in <bold>Computer Engineering</bold> from Iran University of Science and Technology (IUST). <br> Right now, I'm a <b>Software Engineer</b> at Iran Tourism Bank, working on Digital-Banking project. I'm also working as a <strong>Cloud Engineer</strong> and <b>Researcher</b> in Cloud Computing Center of IUST laboratory under the supervision of <a style="color: #008CBA;" href=http://webpages.iust.ac.ir/m_ashtiani>Dr. Mehrdad Ashtiani</a>. I'm also highly intrested in <b>Distributed Systems</b> and <b>Data Mining</b>, and I am working on my paper with the subject of "Auto-scaling in Distributed Stream Processing Systems". Over 5 years, I've tried a lot to gain relevant experiences in my interested fields through study, projects and internships. Currently, I'm applying for Master programs related to my interests and I want to expand my knowledge by research.
+                    </p>
+                </div>
+            </section>
+
+            <div class="beige">
+                <section id="experiences">
+                    <header>
+                        <h1>Experiences</h1>
+                        <h2 >Some of my academic and industrial experiences</h2>
+                    </header>
+
+                    <!------------------------------------- EDUCATION ----------------------------->
+                    <div class="courses-container" id="ex1">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">EDUCATION</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="display: inline;" >Iran University of Science and Technology</h6>
+                                <h6 class="experienceDate">(Sep 2016 - Jul 2020)</h6>
+                                <h5 style="font-style:italic; margin-left:1em;">B.Sc. Computer Engineering with concentration on SE</h5>
+                                <ul style="margin-left: 5em;  font-size: 89%;">
+                                    <li>Ranked 4th among Iran Universities based on QS Ranking</li>
+                                    <li style="margin-top: 1%; font-weight: bold;">GPA (Last two years via 68 credits): 3.85/4 (18.20/20)</li>
+                                    <li style="margin-top: 1%; font-weight: bold;">GPA (All 142 credits): 3.73/4 (17.51/20)</li>
+
+                                </ul>  <br>  <br>
+
+                                <h6 style="display: inline;">Farzanegan (NODET)</h6>
+                                <h6 class="experienceDate">(Sep 2009 - Jul 2016)</h6>
+                                <h5 style="font-style:italic; margin-left:1em;"><i>MidSchool, HighSchool, PreUniversity</i></h5>
+                                <ul style="margin-left: 5em;     font-size: 89%;">
+                                    <li>National Organization for Development of Exceptional Talents</li>
+                                    <li style="margin-top: 1%; font-weight: bold;">GPA: 4/4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!------------------------------------- ACADEMIC EXPERIENCE ----------------------------->
+                     <div class="courses-container" id="ex2">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">ACADEMIC EXPERIENCE</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.8; display: inline;">Cloud Computing Center Administrator</h6>
+                                <h6 class="experienceDate">(Jun 2019 - Present)</h6>
+                                <h5 style="margin-left: 1em; line-height: 1.5;">Working as a Cloud Administrator in Cloud Computing Center of Iran University of Science and Technology:
+                                </h5>
+                                <ul style="margin-left: 5em; font-size: 84%; line-height: 1.2;">
+                                    <li style="margin-top: 1%;">Installing and configuring OpenStack and some of its important tools and services such as: Nova, Neutron, Ceilometer, Gnocchi, Cinder, KeyStone, Glance, ...</li>
+                                    <li style="margin-top: 1%;">Preparing and configuring some Operating Systems like Windows as a Cloud-Ready image</li>
+                                    <li style="margin-top: 1%;">Serving IaaS to other laboratories</li>
+
+                                </ul>  <br>  <br>
+
+                                <h6 style="line-height: 1.8; display: inline;">ChillinWars Developer</h6>
+                                <h6 class="experienceDate">(Sep 2018 - Feb 2019)</h6>
+                                <ul style="margin-left: 5em; font-size: 84%; line-height: 1.2;">
+                                    <li style="margin-top: 1%; margin-left: -6%; font-size: 108%;">ChillinWars is the Iran University of Science and Technology’s AI contest. It’s been held every year
+                                        in Iran as a well-known programming contest in the form of artificial intelligence implementation</li>
+                                    <li style="margin-top: 1%; margin-left: -6%; font-size: 108%;">Working as a full-stack developer of Junior Game of this competition in 2018 -2019 with its
+                                        exclusive framework</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!------------------------------------- TEACHING EXPERIENCE ----------------------------->
+                     <div class="courses-container" id="ex3">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">TEACHING EXPERIENCE</h1>
+                            </div>
+                            <div class="course-info">
+                                <ul style="margin-left: 1em;     font-size: 89%;">
+                                    <li>Data Transmission <div style="opacity: 0.7; display: inline-block;">(Instructor: Dr. Ahmad Akbari)</div></li>
+                                    <li>Embedded Systems TA <div style="opacity: 0.7; display: inline-block; margin-top: 1.4%;">(Instructor: Dr. AmirMahdi Hosseini)</div></li>
+                                    <li>Software Engineering TA <div style="opacity: 0.7; display: inline-block; margin-top: 1.4%;">(Instructor: Dr. Behrooz Minaei)</div></li>
+                                    <li>Software Engineering TA <div style="opacity: 0.7; display: inline-block; margin-top: 1.4%;">(Instructor: Dr. Mehrdad Ashtiani)</div></li>
+                                    <li>Database TA <div style="opacity: 0.7; display: inline-block; margin-top: 1.4%;">(Instructor: Dr. Eisa Zarepour)</div></li>
+                                    <li>Data Structure TA <div style="opacity: 0.7; display: inline-block; margin-top: 1.4%;">(Instructor: Dr. Hossein Rahmani)</div></li>
+                                    <li>System Analysis TA <div style="opacity: 0.7; display: inline-block; margin-top: 1.4%;">(Instructor: Dr. Mehrdad Ashtiani)</div></li>
+                                    <li>Programming Basics TA  <div style="opacity: 0.7; display: inline-block; margin-top: 1.4%;">(Instructor: Dr. Zeinab Movahhedi)</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------- INDUSTRIAL EXPERIENCE ----------------------------->
+                    <div class="courses-container" id="ex4">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title"  style="align-items: center;">INDUSTRIAL EXPERIENCE</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.8; display: inline;">Back-end Developer at Iran Tourism Bank</h6>
+                                <h6 class="experienceDate">(Apr 2021 - Present)</h6>
+                                <ul style="margin-left: 5em; font-size: 84%; line-height: 1.2;">
+                                    <li style="margin-top: 1%; margin-left: -6%; font-size: 108%;">Developed Back-End services for a Digital-Banking project based on Spring Boot and Spring frameworks</li>
+                                    <li style="margin-top: 1%; margin-left: -6%; font-size: 108%;">Developed an API-Gateway-Manager for REST and gRPC</li>
+                                    <li style="margin-top: 1%; margin-left: -6%; font-size: 108%;">Migrated the previous admin dashboard to a new one based on React js framework</li>
+
+                                </ul> <br>  <br>
+
+                                <h6 style="line-height: 1.8; margin-top: 1%; display: inline;">Back-end developer of ”Teachent” Project</h6>
+                                <h6 class="experienceDate">(Feb 2018 - Jun 2018)</h6>
+                                <ul style="margin-left: 5em; font-size: 84%; line-height: 1.2;">
+                                    <li style="margin-top: 1%; margin-left: -6%; font-size: 108%;">”Teachent”: An application of a friendly startup with contribution of 5 developers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div id="skills" style="background: url(assets/img/khoshgele.webp) no-repeat fixed center / cover; width: 100%; position: relative;" >
+                <section>
+                    <header>
+                        <h1>Skills</h1>
+                        <h2 style="color: black;">Click on each button to see my skills in that category</h2>
+                    </header>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a onclick="document.getElementById('programmingLanguages').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom"></div>
+                                        <div class="top">
+                                            <div class="label">Programming Languages</div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+
+
+                                <td>
+                                    <a onclick="document.getElementById('frameworks').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom" style="width: 89%;"></div>
+                                        <div class="top">
+                                            <div class="label">Frameworks/Libraries</div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a onclick="document.getElementById('projectManagementTools').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom"></div>
+                                        <div class="top">
+                                            <div class="label">Project Management Tools</div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                   
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a onclick="document.getElementById('hardwareTools').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom" style="width: 87%;"></div>
+                                        <div class="top">
+                                            <div class="label">Hardware Tools</div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a onclick="document.getElementById('languageSkills').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom" style="width: 87%;"></div>
+                                        <div class="top">
+                                            <div class="label">Languages Skill </div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a onclick="document.getElementById('cloudComputing').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom" style="width: 87%;"></div>
+                                        <div class="top">
+                                            <div class="label">Cloud Computing</div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a onclick="document.getElementById('NLPTools').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom" style="width: 83%;"></div>
+                                        <div class="top">
+                                            <div class="label">NLP Tools</div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a onclick="document.getElementById('others').style.display='block'" class="button nav-link inline" style="margin-left: -2%;">
+                                        <div class="bottom" style="width: 81%;"></div>
+                                        <div class="top">
+                                            <div class="label">Others</div>
+                                            <div class="button-border button-border-left"></div>
+                                            <div class="button-border button-border-top"></div>
+                                            <div class="button-border button-border-right"></div>
+                                            <div class="button-border button-border-bottom"></div>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div id="programmingLanguages" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('programmingLanguages').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">Programming Languages</p>
+                            </div>
+
+                            <div style="margin: 1% 6%;">
+                                <img class="logo-image" src="assets/img/logo/java.png">
+                                <p>Java</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:88%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/python.png">
+                                    <p>Python</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:73%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+
+                                <img class="logo-image" src="assets/img/logo/html.png">
+                                <p>HTML</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:90%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/bash.png">
+                                    <p>Bash</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:72%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/oracle.png">
+                                <p>Oracle</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:90%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/mysql.png">
+                                    <p>MySql</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:79%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/c.png">
+                                <p>C</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:50%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/cpp.png">
+                                    <p>C++</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:40%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/matlab.png">
+                                <p style="font-size: 84%;">MATLAB</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:10%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/assembly.png">
+                                    <p style="font-size: 84%;">Assembly</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:30%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                    </div>
+                                </div>
+                                
+                                <img class="logo-image" src="assets/img/logo/vhdl.png">
+                                <p>VHDL</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:15%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/go.png">
+                                    <p>Golang</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:10%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                    </div>
+                                </div>
+
+                            
+                            </div>     
+                        </form>
+                    </div>
+
+                    <div id="frameworks" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('frameworks').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">Frameworks/Libraries</p>
+                            </div>
+                            <div style="margin: 1% 6%;">
+                                <img class="logo-image" src="assets/img/logo/spring.png">
+                                <p style="font-size: 58%;">Spring Boot</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:88%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/caffeine.png">
+                                    <p style="font-size: 87%;">Caffeine</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:98%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/redis.png">
+                                <p>Redis</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:98%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/django.jpg">
+                                    <p>Django</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:50%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/pandas.png">
+                                    <p>Pandas</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:50%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/scikit-learn.png">
+                                    <p style="font-size: 58%;">Scikit-learn</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:50%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/html.png">
+                                <p>Flask</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:35%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/bash.png">
+                                    <p style="font-size: 89%;">React js</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:30%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/c.png">
+                                <p>SDL</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:25%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                </div>
+                            </div>     
+                        </form>
+                    </div>
+
+                    <div id="projectManagementTools" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('projectManagementTools').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">Project Management Tools</p>
+                            </div>
+
+                            <div style="margin: 1% 6%;">
+                                <img class="logo-image" src="assets/img/logo/jira.png">
+                                <p>Jira</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:98%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/tfs.png">
+                                    <p>TFS</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:98%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/trello.png">
+                                <p>Trello</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:90%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>      
+                            </div>     
+                        </form>
+                    </div>
+
+                    <div id="hardwareTools" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('hardwareTools').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">hardwareTools</p>
+                            </div>
+                            <div style="margin: 1% 6%;">
+                                <img class="logo-image" src="assets/img/logo/xillinx.png">
+                                <p style="font-size: 58%;">Xillinx ISE</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:60%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/arduino.png">
+                                    <p style="font-size: 87%;">Arduino</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:50%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/cvAVR.png.crdownload">
+                                <p style="font-size: 58%;">Code Vision</p>
+                                <p style="font-size: 58%;">AVR</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:40%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/avr.png">
+                                    <p style="font-size: 58%;">AVR Studio</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:40%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+                            </div>     
+                        </form>
+                    </div>
+
+                    <div id="NLPTools" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('NLPTools').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">Project Management Tools</p>
+                            </div>
+                            <div style="margin: 1% 6%;">
+                                <img class="logo-image" src="assets/img/logo/spring.png">
+                                <p style="font-size: 58%;">Spring Boot</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:88%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/caffeine.png">
+                                    <p style="font-size: 87%;">Caffeine</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:98%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/redis.png">
+                                <p>Redis</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:98%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/django.jpg">
+                                    <p>Django</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:50%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+
+
+                                <img class="logo-image" src="assets/img/logo/html.png">
+                                <p>Flask</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:35%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/bash.png">
+                                    <p style="font-size: 89%;">React js</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:30%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/c.png">
+                                <p>SDL</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 12%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:25%; background-color: #ebbd34; "><div style="color: black;">Familiar</div></div>
+                                </div>
+                            </div>     
+                        </form>
+                    </div>
+
+                    <div id="languageSkills" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%; height: 50%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('languageSkills').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">Languages Skill</p>
+                            </div>
+                            <div style="margin: 1% 6%;">
+                                <img class="logo-image" style="width: 46%; margin: 2% -129%;" src="assets/img/logo/Persian.png">
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -18% -73%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:100%; background-color: #20303c; "><div style="color: honeydew;">Native</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" style="width: 46%; margin: 37% -129%;" src="assets/img/logo/english.png">
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -55% -73%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:85%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" style="width: 46%; margin: 72% -129%;" src="assets/img/logo/arabic.png">
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -83% -73%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:40%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+                            </div>     
+                        </form>
+                    </div>
+
+                    <div id="cloudComputing" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('cloudComputing').style.display='none'" class="close-cloud" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">Cloud Computing Concepts & Services</p>
+                            </div>
+                            <div style="margin: 1% 6%;">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>OpenStack,    Nova,    Neutron,     Ceilometer,    Gnocchi,   Cinder,   Keystone,     Glance</p>
+                                            </td>
+                                            <!-- <td>
+                                                <p>Spring Boot</p>
+                                            </td>
+                                            <td>
+                                                <p>Spring Boot</p>
+                                            </td>
+                                            <td>
+                                                <p>Spring Boot</p>
+                                            </td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>     
+                        </form>
+                    </div>
+
+                    <div id="others" class="modal">
+                        <form class="modal-content animate" style="padding: 3% 1%;" >
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('others').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <p style="font-weight: bold; font-size: 132%; margin: -16% -1%;">Programming Languages</p>
+                            </div>
+                            <div style="margin: 1% 6%;">
+                                <img class="logo-image" src="assets/img/logo/linux.png">
+                                <p>Linux</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 10%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:80%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                  </div>
+
+                                  <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/git.png">
+                                    <p>Git</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 10%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:90%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/uml.png">
+                                <p>UML</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 10%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:90%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/postgresql.png">
+                                    <p style="font-size: 72%;">Postgresql</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 10%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:72%; background-color: #20303c; "><div style="color: honeydew;">Proficient</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/nosql.png">
+                                <p style="font-size: 60%;">Mongo DB</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 10%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:40%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+
+                                <div style="margin: 7% 0%;">
+                                    <img class="logo-image" src="assets/img/logo/docker.png">
+                                    <p>Docker</p>
+                                    <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 10%;">
+                                        <div class="w3-container w3-round-xlarge" style="width:50%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                    </div>
+                                </div>
+
+                                <img class="logo-image" src="assets/img/logo/kubernetese.png">
+                                <p style="font-size: 60%;">Kubernetese</p>
+                                <div class="w3-light-grey w3-round-xlarge" style="margin: -4% 10%;">
+                                    <div class="w3-container w3-round-xlarge" style="width:30%; background-color: #33cc33; "><div style="color: black;">Normal</div></div>
+                                </div>
+                            </div>     
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+            <div class="beige">
+                <section id="Projects">
+                    <header>
+                        <h1>Projects</h1>
+                        <h2 >Some of my important academic and self-learning projects</h2>
+                    </header>
+
+                    <!------------------------------------- B.Sc. Final Thesis ----------------------------->
+                    <div class="courses-container" id="exx1">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">B.Sc. Final Thesis</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Security and Performance aware virtual machine placement in Cloud Computing centers</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Provided an algorithm to choose the best host for virtual machines in a way that they become safe against attacks and also increase performance in Cloud Computing environments</li>
+                                    </ul> 
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!------------------------------------- Internet Engineering Course ----------------------------->
+                     <div class="courses-container" id="exx2">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">Internet Engineering Course</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Peer to Peer file transfer</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Established two channels including Signaling channel and Data channel to transfer files between two peers</li>
+                                        <li>Transfered file is done by Data channel which uses WebRTC</li>
+                                    </ul> 
+                                </h5>
+                                <a href="https://github.com/ghazalb76/WebRTC-P2P" class="new-post-card" >
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Long Polling</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Implemented Long Polling using XHR to see posts sent from someone dynamically with no refresh needed</li>
+
+                                    </ul> 
+                                </h5>
+                                <a href="https://github.com/ghazalb76/Long-Polling" class="new-post-card">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Socket Programming</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Implemented a HTTP Web server using sockets</li>
+                                        <li>Implemented a Client-Server communication via Socket Programming in which a client sends a matrix to another one by server and after multiplying the matrix by itself, server returns the result to the first client</li>
+
+                                    </ul> 
+                                </h5>
+                                <a href="https://github.com/ghazalb76/Socket-Programming" class="new-post-card">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Distributed Systems (Self Study) ----------------------------->
+                    <div class="courses-container" id="exx3">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">Distributed Systems (Self Study)</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Stream Processing</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Exchange Information Analysis with Stream Processing using Apache Storm</li>
+
+                                    </ul> 
+                                </h5>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/StreamProcessing">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Implemented MPI (Message Passing Interface)</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Multiply huge matrices using multiple nodes</li>
+                                        <li>Calculate the integral by the trapezoidal approximation method using distributed systems</li>
+
+                                    </ul> 
+                                </h5>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/MPI">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                     <!------------------------------------- Data Mining ----------------------------->
+                     <div class="courses-container" id="exx4">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">Data Mining</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Heart Diseases Recognition</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Implemented Decision Tree using Python and Sickit-learn to detect if someone is suffering from heart disease or no</li>
+
+                                    </ul> 
+                                </h5>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/DecisionTree-HeartDisease">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Fraud Detection</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Implemented a SVM classification model to detect fraud</li>
+
+                                    </ul> 
+                                </h5>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/Classification-SVM">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------- Object Oriented Design ----------------------------->
+                    <div class="courses-container" id="exx5">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">Object Oriented Design</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Evar Framework</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Implemented a Framework that others can develop websites like Divar and eBay</li>
+                                    </ul> 
+                                </h5>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/Evar">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!------------------------------------- Natural Language Processing ----------------------------->
+                     <div class="courses-container" id="exx6">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">Natural Language Processing</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Pop vs. Traditional lyrics recognition</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <li>Data collection, Data Extraction, Pre Processing, and primary data analysis</li>
+                                        <li>Data Splitting, Implemented Language Model’s train phase, Implemented Perplexity
+                                            calculation, Implemented Text Generation using Language model</li>
+                                        <li>Implemented Naive-Bayes Classifier, Implemented Maximum Entropy (MaxEnt)
+                                            Classifiers using Mallet and comparing these two approaches</li>
+                                    </ul> 
+                                </h5>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/Pop-Traditional-Recognition">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Different Phonetics Detection</h6>
+                                <h5>
+                                    <ul style="margin-left: 2em; line-height: 1.2;">
+                                        <!-- <li></li> -->
+
+                                    </ul> 
+                                </h5>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/DifferentPhoneticsExtraction-NLP">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!------------------------------------- Computational Intelligence Course ----------------------------->
+                     <div class="courses-container" id="exx7">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">Computational Intelligence Course</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Solved ”Inverted Pendulum” using Fuzzy Logics</h6>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/InvertedPendulum">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Image classification using Multi-Layer Perceptron for Hoda Data Set (Like MNIST but in
+                                    Persian) using Numpy, Keras</h6>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/MLP-FarsiDigits">
+                                        <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Designed a noise-robust model using Hopfield Network for image detection</h6>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/HopField-ImageNoiseDetection">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Function approximation using RBF (Radial Basis Function)</h6>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/RBF-FunctionApproximation">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------------------------------- Signal Processing Course ----------------------------->
+                    <div class="courses-container" id="exx8">
+                        <div class="course">
+                            <div class="course-preview">
+                                <h1 class="experience-title" style="align-items: center;">Signal Processing Course</h1>
+                            </div>
+                            <div class="course-info">
+                                <h6 style="line-height: 1.2;">Gender Recognition using signal Processing and signal-based feature</h6>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/Gender-Recognition">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Dual-Tone Multi-Frequency (DTMF) signaling</h6>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/DTMF">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                                <br> <hr>
+
+                                <h6 style="line-height: 1.2;">Yes-No Detection simulation practice</h6>
+                                <a class="new-post-card" href="https://github.com/ghazalb76/DTMF-Yes-No">
+                                    <i class="fa fa fa-github git-icon" style="font-size: 159%;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div style="background: url(assets/img/experiences.png) no-repeat fixed center / cover; width: 100%; position: relative;">
+                <section id="interests">
+                    <header>
+                        <h1>Selected Presentations</h1>
+                        <h2>
+                            Click on the topic you are interested in to be redirected to the full presentation</h2>
+                    </header>
+                    <div id="interests-pictures">
+                        <div class="interest" ng-repeat="interest in interests">
+                            <img ng-src="{{ interest.image }}">
+                            <div class="interest-info">
+                                <div class="interest-name">{{ interest.name }}</div>
+                                <div class="interest-text">
+                                    {{ interest.text }}
+                                </div>
+                                <a href="{{ interest.link }}" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <section id="contact">
+                <header>
+                    <h1>Contact</h1>
+                    <h2>Feel free to send me message, I'll try to respond as quick as I can! :D</h2>
+                </header>
+                <div id="contact-info">
+                    <div id="social-icons">
+                        <!-- <a href="https://www.facebook.com/shafqat.dulal" target="_blank" class="social-icon"><span class="fa fa-facebook-square"></span></a>
+                        <a href="https://www.google.com/+ShafqatDulal" target="_blank" class="social-icon"><span class="fa fa-google-plus-square"></span></a>
+                        <a href="https://twitter.com/ABirdThatFlies" target="_blank" class="social-icon"><span class="fa fa-twitter-square"></span></a> -->
+                        <br>
+                        <a href="https://www.linkedin.com/in/qhazale-bakhtiari/" target="_blank" class="social-icon"><span class="fa fa-linkedin-square"></span></a>
+                        <a href="https://github.com/ghazalb76" target="_blank" class="social-icon"><span class="fa fa-github-square"></span></a>
+                        <a href="mailto:ghazal.b93@gmail.com" target="_blank" class="social-icon"><span class="fa fa-envelope-square"></span></a>
+                    </div>
+                    <!-- <div id="contact-text">
+                        I am very interested in software engineering internship opportunities for next summer. Reach out to me on one of the various networks! Otherwise, here's my <a href="https://drive.google.com/file/d/0B4zxv4wnD4qeRWdVeGhseEs5UlE/view?usp=sharing" target="_blank">résumé</a>.
+                    </div>
+                    <div class="social-likes buttons">
+                        <div class="facebook button" title="Share link on Facebook">Facebook</div>
+                        <div class="twitter button" title="Share link on Twitter">Twitter</div>
+                        <div class="plusone button" title="Share link on Google+">Google+</div>
+                    </div> -->
+                <div>
+                    <span style="margin: 0% 36%; display: inline; opacity: 0.5; font-size: 86%;">&#169;</span>
+                    <p style="display: inline; display: inline; margin: 1% -36%; opacity: 0.5; font-size: 86%;">Theme by <a href="http://sdulal.github.io/">Sdulal</a> . 2021 <a href="http://ghazalb76.github.io/">Ghazale Bakhtiari Azad</a></p>
+                </div>
+
+                </div>
+            </section>
+            <main>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#typed1").typed({
+                strings: ["Data Science","Machine Learning","Blockchain","Software Engineering","Big Data"],
+    
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 0,
+                // time before typing starts
+                startDelay: 100,
+                // backspacing speed
+                backSpeed: 0,
+                // time before backspacing
+                backDelay: 1500,
+                // loop
+                loop: true,
+                // false = infinite
+                loopCount: false,
+                // show cursor
+                showCursor: true,
+                // character for cursor
+                cursorChar: "",
+    
+            });
+      </script>
+      <script >
+        var ml4 = {};
+        ml4.opacityIn = [0,1];
+        ml4.scaleIn = [0.2, 0.8];
+        ml4.scaleOut = 1;
+        ml4.durationIn = 1000;
+        ml4.durationOut = 600;
+        ml4.delay = 500;
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml4 .letters-1',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: '.ml4 .letters-1',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: '.ml4 .letters-2',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: '.ml4 .letters-2',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: '.ml4 .letters-3',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: '.ml4 .letters-3',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: '.ml4 .letters-4',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: '.ml4 .letters-4',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: '.ml4',
+            opacity: 0,
+            duration: 500,
+            delay: 500
+        });
+
+
+      </script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('programmingLanguages');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    var framework = document.getElementById('frameworks');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == framework) {
+            modal.style.display = "none";
+        }
+    }
+
+    var NLPTools = document.getElementById('NLPTools');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == NLPTools) {
+            modal.style.display = "none";
+        }
+    }
+
+    var projectManagementTools = document.getElementById('projectManagementTools');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == projectManagementTools) {
+            modal.style.display = "none";
+        }
+    }
+
+    var hardwareTools = document.getElementById('hardwareTools');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == hardwareTools) {
+            modal.style.display = "none";
+        }
+    }
+
+    var languageSkills = document.getElementById('languageSkills');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == languageSkills) {
+            modal.style.display = "none";
+        }
+    }
+
+    var cloudComputing = document.getElementById('cloudComputing');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == cloudComputing) {
+            modal.style.display = "none";
+        }
+    }
+
+    var others = document.getElementById('others');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == others) {
+            modal.style.display = "none";
+        }
+    }
+
+    //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+}
+
+
+
+// $(document).ready(function() {
+//     $(window).scroll(function() {
+//         if ($(this).scrollTop() > 20) {
+//             $('#toTopBtn').fadeIn();
+//         } else {
+//             $('#toTopBtn').fadeOut();
+//         }
+//     });
+
+//     $('#toTopBtn').click(function() {
+//         $("html, body").animate({
+//             scrollTop: 0
+//         }, 1000);
+//         return false;
+//         });
+//     });
+    
+
+    </script>
+</body>
+
+
+
+</html>
