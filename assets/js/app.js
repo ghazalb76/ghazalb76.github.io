@@ -77,6 +77,12 @@ app.controller('MainController', ['$scope', function($scope) {
             text: 'Cyber Threats and Attack Vectors Course, University of Colorado System, Greg Williams',
             link: '',
             image: 'assets/img/presentations/Certificate.PNG'
+        },
+        {
+            name: 'Chillinwars',
+            text: "Me as one of the developers of the Chillinwars AI contest's exclusive framework",
+            link: '',
+            image: 'assets/img/presentations/Chillinwars.JPG'
         }
     ];
 }]);
